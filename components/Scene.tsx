@@ -2,6 +2,7 @@ import { Lightformer, useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 export default function Scene(props) {
+  // @ts-ignore
   const { nodes } = useGLTF("/studio_baked.gltf");
   const texture = useTexture("/baked_studio.jpg");
   texture.flipY = false;
